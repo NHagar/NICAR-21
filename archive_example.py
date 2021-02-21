@@ -2,8 +2,8 @@ from bs4 import BeautifulSoup
 import requests
 
 # News site URL info
-BASE_URL = "https://psmag.com/"
-AUTHOR_URL = BASE_URL + "author/nick-hagar-1"
+BASE_URL = "https://psmag.com"
+AUTHOR_URL = BASE_URL + "/author/nick-hagar-1"
 
 def collect_urls(author_page):
     """Scrape author page for article links
