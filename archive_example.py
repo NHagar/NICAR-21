@@ -13,7 +13,7 @@ def collect_urls(author_page):
     """
     r = requests.get(author_page)
     page_html = r.text
-    soup = BeautifulSoup(page_html, features="lxml")
+    soup = BeautifulSoup(page_html)
     link_elements = soup.find_all("phoenix-super-link")
     links = [BASE_URL + i["href"] for i in link_elements]
     return links
